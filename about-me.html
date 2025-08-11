@@ -20,28 +20,37 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="img/AudreyOnyike.svg" alt="Audrey-logo" height="28">
+                    <img src="img/AudreyOnyike.svg" alt="Audrey-logo" width="218px" height="37px" style="line-height: 100%; font-family: Monoton;">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a class="nav-link" href="index.html#portfolio">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?tab=t.0">My Resume</a>
-                    </li>
-                </ul>
-                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Offcanvas menu -->
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #172135;">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Hi! I'm Audrey</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html#portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?tab=t.0">My Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
             </div>
             </nav>
 
     </div>
+        <!-- nav ends here -->
 <!-- end of navbar -->
 
 <!-- intro -->
