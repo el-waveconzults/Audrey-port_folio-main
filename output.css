@@ -307,27 +307,7 @@
   .static {
     position: static;
   }
-  .container {
-    width: 100%;
-    @media (width >= 20rem) {
-      max-width: 20rem;
-    }
-    @media (width >= 40rem) {
-      max-width: 40rem;
-    }
-    @media (width >= 48rem) {
-      max-width: 48rem;
-    }
-    @media (width >= 64rem) {
-      max-width: 64rem;
-    }
-    @media (width >= 80rem) {
-      max-width: 80rem;
-    }
-    @media (width >= 96rem) {
-      max-width: 96rem;
-    }
-  }
+  
   .mx-auto {
     margin-inline: auto;
   }
@@ -1619,57 +1599,4 @@ margin-left: 2rem;
 }
 .logo-back {
   margin-left: 5rem;
-}
-/* 🔽 SMALL SCREENS: 600px and below */
-@media (max-width: 600px) {
-  .mini-project {
-    width: 100% !important;
-  }
-
-  .left-intro, .right-intro {
-    text-align: center;
-    padding-top: 2rem !important;
-  }
-
-  .portfolio-heading {
-    flex-direction: column !important;
-    text-align: center;
-  }
-
-  .contact-form {
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .caption-img {
-    margin-top: 2rem;
-    display: flex;
-    justify-content: center;
-  }
-
-  /* Add more rules as needed */
-}
-
-/* 🔼 MEDIUM SCREENS and UP: 601px and above */
-@media (min-width: 601px) {
-  .portfolio-heading {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .mini-project {
-    width: 48%;
-  }
-
-  .intro .left-intro {
-    padding-top: 7rem;
-  }
-
-  .caption-img {
-    margin-top: 0;
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  /* You can add more for larger layouts */
 }
