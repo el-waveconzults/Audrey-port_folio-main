@@ -1,791 +1,740 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="output.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Audrey Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet" />
-      <link rel="stylesheet" href="index.css">
-    <link
+      rel="stylesheet"/>
+      <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
-      rel="stylesheet" />
-  </head>
-  <body>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 xl:px-32">
-    <div class="container mx-auto pt-10">
-      <!-- <header class="xs:bg-green-500 sm:bg-red-500 md:bg-amber-500 lg:bg-blue-500"> -->
-      <header class="">
-        <nav class="nav-links">
-          <div class="flex justify-between items-center">
-            <a
-              href="index.html"
-              class="text-white text-xl font-bold text-center sm:text-left"
-              ><img
-                src="img/AudreyOnyike.svg"
-                alt="audrey-onyike"
-                class="mx-auto sm:mx-0"
-            /></a>
+      rel="stylesheet"
+    />
 
-            <!-- Hamburger Button -->
-            <button
-              id="menu-toggle"
-              class="text-white md:hidden lg:hidden focus:outline-none">
-              ☰
-            </button>
-            <!-- Navigation Links (Hidden on small screens) -->
-            <ul id="menu" class="hidden md:flex space-x-6 text-white text-lg">
-              <li>
-                <a href="#portfolio" class="hover:underline hover:text-primary"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a
-                  href="about-me.html"
-                  class="hover:underline hover:text-primary"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?usp=sharing"
-                  class="hover:underline hover:text-primary"
-                  >My Resume</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Mobile Menu (Hidden by default) -->
-          <ul
-            id="mobile-menu"
-            class="hidden flex-col items-center text-white text-center space-y-4 sm:hidden">
-            <li><a href="#portfolio" class="hover:underline">Projects</a></li>
-            <li><a href="about-me.html" class="hover:underline">About</a></li>
-            <li><a href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?usp=sharing" class="hover:underline">My Resume</a></li>
-          </ul>
-        </nav>
-        <!-- END OF NAV LINKS -->
-      </header>
-      <!-- END OF HEADER -->
-
-      <section class="intro mt-5 pb-28">
-        <div
-          class="flex flex-col sm:flex-col md:flex-row justify-between mini-intro">
-          <div class="left-intro pt-28 sm:pt-10">
-            <h1 class="text-2xl mb-5">
-              Hello! I am <span class="text-primary">Audrey</span>. Product
-              Designer.
-            </h1>
-            <div class="user-caption text-2xl font-bold md:w-xl mb-5 font-bold">
-              I design beautiful, user-friendly web and mobile products.
-            </div>
-            <div class="button-block">
-              <button
-                class="bg-primary custom-text text-white rounded-3xl px-6 py-2 mr-4">
-                <a href="https://www.linkedin.com/in/audrey-onyike-ba6a50230/">
-                Contact Me
+</head>
+<body>
+    <div class="container-fluid p-0 m-0 ">
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="img/AudreyOnyike.svg" alt="Audrey-logo" width="218px" height="37px" style="line-height: 100%; font-family: Monoton;">
                 </a>
-              </button>
-              <button class="text-primary"><a href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?usp=sharing">
-                My Resume
-                </a></button>
-            </div>
-          </div>
-          <div class="right-intro sm:mt-6 sm:w-full sm:flex sm:justify-center">
-<img
-              src="img/audrey.png"
-              title="audrey"
-              alt="audrey"
-              class="w-3/4 sm:w-full max-w-sm" />
-          </div>
-        </div>
-      </section>
-      <!-- END OF INTRO SECTION -->
-
-      <section class="portfolio mb-28" id="portfolio">
-        <div
-          class="portfolio-heading flex xs:flex-col sm:flex-col md:flex-row justify-between mb-10">
-          <h1 class="text-primary text-5xl font-medium sm:text-center">
-            My Projects
-          </h1>
-          <div class="sm:text-center sm:mt-3">
-            <ul>
-              <li>available for projects</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- START OF PROJECTS -->
-        <div
-          class="projects flex xs:flex-col sm:flex-col md:flex-row md:justify-between gap-5 sm:justify-between justify-between mb-12">
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2024</div>
-<img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/akilaah-app.jpg"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Fintech
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Mobile
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Admin
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Design Library
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">
-                Translating Akilaah's Web Experience Into a User-Centered Mobile
-                App
-              </h2>
-            </div>
-
-            <div class="main-stats flex justify-between mb-12">
-              <div class="left-stat">
-                <h2 class="text-2xl font-medium">30%</h2>
-                <div class="text-caption-purple">
-                  increase in revenue from member contributions, driven by
-                  intuitive workflows and mobile accessibility.
-                </div>
-              </div>
-              <div class="right-stat">
-                <h2 class="text-2xl font-medium">35%</h2>
-                <div class="text-caption-purple">
-                  rise in member registrations, expanding Akilaah’s user base
-                  among younger demographics.
-                </div>
-              </div>
-            </div>
-
-            <div class="button-block">
-              <a href="https://apps.apple.com/us/app/akilaah/id6670462885">
-                <button
-                  class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                  <a href="https://apps.apple.com/us/app/akilaah/id6670462885">Download App &rarr;</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
                 </button>
-              </a>
-
-              <button class="font-epilogue font-medium">
-                <a href="case-study1-akilah.html"
-                  >View Case Study &rarr;</a
-                >
-              </button>
-            </div>
-          </div>
-
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2024</div>
-<img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/akilaah2.jpg"
-              alt="" />
-
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Fintech
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Web
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Admin
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">
-                Simplifying Cooperative Management: Designing an Agent Portal
-                for Easy Onboarding and Tracking
-              </h2>
-            </div>
-
-            <div class="main-stats flex justify-between gap-2.5 mb-12">
-              <div class="left-stat">
-                <h2 class="text-2xl font-medium">40%</h2>
-                <div class="text-caption-purple">
-                  improvement in operational efficiency.
+                <div class="collapse navbar-collapse" id="collapsibleNavbar" style="font-family: epilogue; ">
+                <ul class="navbar-nav ms-auto" style="color: #F8F7F9;"  >
+                    <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?tab=t.0">My Resume</a>
+                    </li>
+                </ul>
                 </div>
-              </div>
-              <div class="right-stat">
-                <h2 class="text-2xl font-medium">20%</h2>
-                <div class="text-caption-purple">
-                  Increase in member satisfaction.
-                </div>
-              </div>
             </div>
+            </nav>
 
-            <div class="button-block">
-              <a href="https://www.akilaah.com/sign-up">
-                <button
-                  class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                  <a href="https://www.akilaah.com/sign-up">Visit Project &rarr;</a>
-                </button>
-              </a>
-
-              <button class="font-epilogue font-medium">
-                <a href="./case-study2-akilah-agent-portal.html"
-                  >View Case Study &rarr;</a
-                >
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="projects flex xs:flex-col sm:flex-col md:flex-row justify-between mb-12 gap-5">
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2024</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/majfintech.jpg"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Web
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Mobile
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">
-                Redesigning to Enhance User Experience and Boost Engagement on
-                Majfintech’s Website
-              </h2>
-            </div>
-
-            <div class="main-stats flex justify-between mb-12">
-              <div class="left-stat w-1/2">
-                <h2 class="text-2xl font-medium">20%</h2>
-                <div class="text-caption-purple">reduction in bounce rates</div>
-              </div>
-              <div class="right-stat w-1/2">
-                <h2 class="text-2xl font-medium">40%</h2>
-                <div class="text-caption-purple">
-                  improvement in mobile traffic, driven by responsive design
-                </div>
-              </div>
-            </div>
-
-            <div class="button-block">
-              <a href="https://www.majfintech.com">
-                <button
-                  class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                  Visit Project &rarr;
-                </button>
-              </a>
-
-              <button class="font-epilogue font-medium">
-                <a href="./case-study3-akilah-maj-website.html"
-                  >View Case Study &rarr;</a
-                >
-              </button>
-            </div>
-          </div>
-
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2024</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/qn-search-app.jpg"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Fintech
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Web
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Admin
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">
-                Revolutionizing Care Provider Search: A Mobile & Web
-                Application for Seamless Client Matching.(PROTECTED)
-              </h2>
-            </div>
-            
-           
-          </div>
-        </div>
-
-        <div
-          class="projects flex xs:flex-col sm:flex-col md:flex-row justify-between mb-12 gap-5">
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2024</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/akilaah3-app.png"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Web
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Mobile
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Fintech
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">Akilaah.com</h2>
-            </div>
-
-            <div class="main-stats flex justify-between mb-12">
-              <div class="left-stat">
-                <div class="text-caption-purple">
-                  AKILAAH is a pioneering digital cooperative platform
-                  transforming how financial services and welfare support are
-                  accessed by everyone.
-                </div>
-              </div>
-            </div>
-
-            <div class="button-block">
-              <a href="https://www.akilaah.com/ "
-                ><button
-                  class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                  Visit Project &rarr;
-                </button></a
-              >
-            </div>
-          </div>
-
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2023</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/konvey-app.png"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Web
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                User Interface
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                SaaS
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">Konvey.app</h2>
-            </div>
-
-            <div class="main-stats flex justify-between mb-12">
-              <div class="left-stat">
-                <div class="text-caption-purple">
-                  Konvey: A video recording software that replaces
-                  back-and-forth emails and meetings with simple video messaging
-                </div>
-              </div>
-            </div>
-
-            <div class="button-block">
-              <a href="https://konvey.app/">
-                <button
-                  class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                  Visit Project &rarr;
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="projects flex xs:flex-col sm:flex-col md:flex-row justify-between mb-12 gap-5">
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2024</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/real-estate-app.png"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Web
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Mobile
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Fintech
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">Boingestates.com</h2>
-            </div>
-
-            <div class="main-stats mb-12">
-              <p class="text-caption-purple">
-                A real estate development company that provides housing &
-                Real Estate investment solutions to individuals, groups &
-                corporate bodies
-              </p>
-            </div>
-
-            <div class="button-block">
-              <button
-                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                <a href="https://boingestates.com/home">Visit Project &rarr;</a>
-              </button>
-            </div>
-          </div>
-
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2019</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/work-io-app.png"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Web
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                User Interface
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Practice
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">UI Challenges</h2>
-            </div>
-
-            <div class="main-stats flex justify-between mb-12">
-              <div class="left-stat">
-                <div class="text-caption-purple">
-                  These challenges helped me think logically and improve my
-                  problem-solving and design skills.
-                </div>
-              </div>
-            </div>
-
-            <div class="button-block">
-              <button
-                disabled
-                class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                Visit Project &rarr;
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="projects flex xs:flex-col sm:flex-col md:flex-row justify-between mb-12 gap-5">
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2021</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/mobicare-app.png"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Mobile
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Medical
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Product Design
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">MobiCare</h2>
-            </div>
-
-            <div class="main-stats flex justify-between mb-12">
-              <div class="left-stat">
-                <div class="text-caption-purple">
-                  MobiCare allows patients to receive treatment and
-                  consultations remotely, using technology such as video
-                  conferencing, phone calls, and messaging.
-                </div>
-              </div>
-            </div>
-
-            <div class="button-block">
-              <a href="">
-                <button
-                  class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                  <a href="./mobicare-case-study.html"
-                    >View Case Study &rarr;</a
-                  >
-                </button>
-              </a>
-            </div>
-          </div>
-
-          <div class="mini-project xs:w-full sm:w-full w-1/2">
-            <div class="text-grey mb-4">2019</div>
-            <img
-              class="rounded-sm mb-3 w-full h-auto"
-              src="img/projects/credence-app.png"
-              alt="" />
-            <div class="tags flex mb-7">
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                User Interface
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Dashboard
-              </button>
-              <button class="tag bg-tag-blue rounded-md p-1 mr-2 text-sm">
-                Fintech
-              </button>
-            </div>
-            <div class="mb-9">
-              <h2 class="text-2xl font-medium">Credence</h2>
-            </div>
-
-            <div class="main-stats flex justify-between mb-12">
-              <div class="left-stat">
-                <div class="text-caption-purple">
-                  An intuitive, accessible, and visually appealing online
-                  dashboard that empowers customers to manage their finances
-                  efficiently.
-                </div>
-              </div>
-            </div>
-
-            <div class="button-block">
-              <a href="">
-                <button
-                  class="bg-primary font-epilogue font-medium text-white rounded-sm px-2 py-2 mr-7">
-                  <a href="./credence-ui.html">View Case Study &rarr;</a>
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END OF MAIN PORTFOLIO SECTION -->
-
-      <section class="skillset">
-        <h1 class="text-primary text-5xl font-medium tracking-tightest mb-5">
-          My Skillset
-        </h1>
-        <div class="text-caption-purple mb-16">
-          I always bring together the proper methods and tools to achieve the
-          best possible outcomes.
-        </div>
-
-        <div class="miniblock flex mb-8">
-<img src="img/Pen.png" alt="pen" />
-          <h2 class="mt-1 ml-1">UI & UX Design</h2>
-        </div>
-
-        <div
-          class="miniskillset flex-wrap sm:flex-col md:flex-wrap lg:flex-row justify-between mb-20">
-          <button
-            class="tag bg-tag-blue rounded-sm px-2 py-1.5 mr-2 mb-2 text-sm">
-            Design Thinking
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            Wireframing
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            User Research
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            Visual Design
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            Responsive Design
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            A/B Testing
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            Prototyping
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            Design System
-          </button>
-          <button
-            class="tag mb-2 bg-tag-blue rounded-sm px-2 py-1.5 mr-2 text-sm">
-            Agile
-          </button>
-        </div>
-
-        <div class="miniblock flex mb-9">
-<img src="img/Briefcase.png" alt="pen" />
-          <h2 class="mt-1 ml-1">Tools</h2>
-        </div>
-
-        <div
-          class="trade-tools flex xs:flex-wrap sm:flex-wrap justify-between mb-28">
-          <div class="subskill flex">
-            <div class="skill-icon mr-3">
-<img src="img/devicon_figma.svg" title="figma" alt="" />
-            </div>
-            <div class="skill-info">
-              <div class="skill-text">Figma</div>
-              <div
-                class="font-source text-grayish skill-sub-text text-sm opacity-40">
-                Interface Design Tool
-              </div>
-            </div>
-          </div>
-          <div class="subskill flex">
-            <div class="skill-icon mr-3">
-<img src="img/circum_penpot.png" title="penpot" alt="" />
-            </div>
-            <div class="skill-info">
-              <div class="skill-text">Penpot</div>
-              <div
-                class="font-source text-grayish skill-sub-text text-sm opacity-40">
-                Interface Design Tool
-              </div>
-            </div>
-          </div>
-          <div class="subskill flex">
-            <div class="skill-icon mr-3">
-<img src="img/devicon_jira-wordmark.png" title="Jira" alt="" />
-            </div>
-            <div class="skill-info">
-              <div class="skill-text">Jira</div>
-              <div
-                class="font-source text-grayish skill-sub-text text-sm opacity-40">
-                Productivity Tool
-              </div>
-            </div>
-          </div>
-          <div class="subskill flex">
-            <div class="skill-icon mr-3">
-<img src="img/devicon_trello.png" title="trello" alt="" />
-            </div>
-            <div class="skill-info">
-              <div class="skill-text">Trello</div>
-              <div
-                class="font-source text-grayish skill-sub-text text-sm opacity-40">
-                Productivity Tool
-              </div>
-            </div>
-          </div>
-          <div class="subskill flex">
-            <div class="skill-icon mr-3">
-<img src="img/devicon_slack.png" title="slack" alt="" />
-            </div>
-            <div class="skill-info">
-              <div class="skill-text">Slack</div>
-              <div
-                class="font-source text-grayish skill-sub-text text-sm opacity-40">
-                Productivity Tool
-              </div>
-            </div>
-          </div>
-          <div class="subskill flex">
-            <div class="skill-icon mr-3">
-<img src="img/logos_html-5.png" title="html5" alt="" />
-            </div>
-            <div class="skill-info">
-              <div class="skill-text">Html & Css</div>
-              <div
-                class="font-source text-grayish skill-sub-text text-sm opacity-40">
-                Interface DesignTool
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- END OF SKILLSET SECTION -->
     </div>
-    <!-- END OF MAIN CONTAINER SECTION -->
+        <!-- nav ends here -->
 
-    <section class="contact-me bg-tag-blue">
-      <div class="container-class container overflow-hidden mx-auto py-20">
-        <div class="flex xs:flex-col sm:flex-col md:flex-row justify-between">
-          <div class="contact-form">
-            <h1
-              class="text-primary text-5xl font-medium tracking-tightest pb-16">
-              Let's work together
-            </h1>
-            <div class="mini-text font-epilogue text-caption-purple pb-8">
-              If you have a project or a job opportunity in mind, I would like
-              to hear from you.
-            </div>
-            <div class="social-media">
-              <div class="email bg-bat-black rounded-lg mb-5">
-                <div class="social-box flex py-2 px-3">
-                  <div class="email-icon bg-subtle-grey rounded-full p-3">
-                    <div><i class="fa-regular fa-envelope"></i></div>
-                  </div>
-                  <div class="email-text ml-2 pt-2.5"><a href="#">Onyiksa@gmail.com</a></div>
-                  <div class="email-arrow ml-2 pt-2.5 text-xl">&gt;</div>
-                </div>
-              </div>
-              <div class="email bg-bat-black rounded-lg mb-5">
-                <div class="social-box flex py-2 px-3">
-                  <div class="email-icon bg-subtle-grey rounded-full p-3">
-                    <div><i class="fa-brands fa-linkedin-in"></i></div>
-                  </div>
-                  <div class="email-text ml-2 pt-2.5"><a href="https://www.linkedin.com/in/audrey-onyike-ba6a50230/">Linkedin</a></div>
-                  <div class="email-arrow ml-2 pt-2.5 text-xl">&gt;</div>
-                </div>
-              </div>
-              <div class="email bg-bat-black rounded-lg mb-5">
-                <div class="social-box flex py-2 px-3">
-                  <div class="email-icon bg-subtle-grey rounded-full p-3">
-                    <div><i class="fa-brands fa-x-twitter"></i></div>
-                  </div>
-                  <div class="email-text ml-2 pt-2.5"><a href="https://twitter.com/Audreyonyike ">X/Twitter</a></div>
-                  <div class="email-arrow ml-2 pt-2.5 text-xl">&gt;</div>
-                </div>
-              </div>
+        <!-- intro -->
+      <section class="mt-5 pt-5 pb-5">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-between">
+      <!-- Left: Text content -->
+      <div class="col-md-6 pt-md-5 pt-sm-3">
+        <h1 class=" mb-4" style="font-family: epilogue; font-size: 18px;">
+          Hello! I am <span class="" style="color: #B550F8;">Audrey</span>. Product Designer.
+        </h1>
+        <p class="fw-bold mb-4" style="max-width: 36rem; font-size: 40px; letter-spacing: -2px;">
+          I design beautiful, user-friendly web and mobile digital products.
+        </p>
+        <div class="d-flex flex-wrap">
+          <a href="https://www.linkedin.com/in/audrey-onyike-ba6a50230/" class="btn rounded-pill px-4 py-2 me-3 mb-2" style="background-color: #B550F8; color: white;">
+            Contact Me
+          </a>
+          <a href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?usp=sharing" class="btn px-4 py-2 mb-2" style="color: #B550F8;">
+            My Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Optional image or illustration -->
+      <div class="col-md-5 text-center mt-4 mt-md-0">
+        <img src="img/audrey.png" alt="Audrey" class="img-fluid rounded">
+      </div>
+    </div>
+  </div>
+</section>
+
+        <!-- intro ends here -->
+
+
+
+        <!-- portfolio -->
+        <div class="container-fluid mb-5">
+          <div class="portfolio-heading row align-items-center mb-4">
+    <!-- Heading -->
+            <div class="col-md-6 text-primary">
+              <h1 class="fw-medium display-5 text-md-start text-center" style="color: #B550F8;">
+                My Projects
+              </h1>
             </div>
 
-            <div class="button-block mt-20">
-              <button
-                class="bg-primary custom-text text-white font-bold rounded-3xl px-6 py-2 mr-4">
-                Drop a message
-              </button>
-              <button class="text-primary"><a href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?usp=sharing">View Resume</a></button>
+            <!-- Availability Text -->
+            <div class="col-md-6 text-md-end text-center mt-3 mt-md-0">
+              <ul class="list-unstyled mb-0">
+                <li>available for projects</li>
+              </ul>
             </div>
           </div>
-          <div class="caption-img">
-            <img title="audrey-contact" src="img/audrey-contact.svg" alt="" />
+
+
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2024</div>
+                     <img src="img/projects/akilaah-app.jpg" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135;">Fintech</span>
+                            <span class="badge" style="background-color: #172135;">Mobile</span>
+                            <span class="badge" style="background-color: #172135;">Admin</span>
+                            <span class="badge" style="background-color: #172135;">Design Library</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                            Translating Akilaah's Web Experience Into a User-Centered Mobile App
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                            <div class="row mb-5">
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">30%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.
+                                </p>
+                                </div>
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">35%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Rise in member registrations, expanding Akilaah’s user base among younger demographics.
+                                </p>
+                                </div>
+                            </div>
+
+                                                <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                            <a href="case-study1-akilah.html" class="btn" style="color: #B550F8;">
+                            View Case Study →
+                            </a>
+                        </div>
+                </div>
+
+
+
+                       <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2024</div>
+                     <img src="img/projects/akilaah2.jpg" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Fintech</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Web</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Admin</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                                Simplifying Cooperative Management: Designing an Agent Portal
+                                for Easy Onboarding and Tracking
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                            <div class="row mb-5">
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">40%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Improvement in operational efficiency.
+                                </p>
+                                </div>
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">20%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Increase in Member satisfaction
+                                </p>
+                                </div>
+                            </div>
+
+                                                <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                            <a href="case-study1-akilah.html" class="btn" style="color: #B550F8;">
+                            View Case Study →
+                            </a>
+                        </div>
+                </div>
+
+                </div>
+            </div>
+
+
+            
+        </div>
+
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2024</div>
+                     <img src="img/projects/majfintech.jpg" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Web</span>
+                            <span class="badge" style="background-color: #172135; color: wheat;">Mobile</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                           Redesigning to Enhance User Experience and Boost Engagement
+                           on MajFintech's Website
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                            <div class="row mb-5">
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">20%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Reduction in Bounce Rates
+                                </p>
+                                </div>
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">40%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Improvement in mobile traffic,driven by
+                                    responsive design
+                                </p>
+                                </div>
+                            </div>
+
+                          <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn px-3 py-2" style="background-color: #B550F8; color: white;" >
+                            Download App →
+                            </a>
+                            <a href="case-study1-akilah.html" class="btn" style="color: #B550F8;">
+                            View Case Study →
+                            </a>
+                        </div>
+                </div>
+
+
+
+                       <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2024/2025</div>
+                     <img src="img/projects/qn-search-app.jpg" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Mobile</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Web</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Admin</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                            Revolutionizing Career Wider Search: A Mobile & Web Application
+                            for Seamless Client Matching.(PROTECTED)
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                            <div class="row mb-5">
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">30%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Increase in revenue from member contributions, driven by intuitive workflows and mobile accessibility.
+                                </p>
+                                </div>
+                                <div class="col-sm-6">
+                                <h2 class="h4 fw-medium">35%</h2>
+                                <p class="small" style="color: #AB9EB8;">
+                                    Rise in member registrations, expanding Akilaah’s user base among younger demographics.
+                                </p>
+                                </div>
+                            </div>
+
+                            
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2024</div>
+                     <img src="img/projects/akilaah3-app.png" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Web</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Mobile</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Fintech</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                              Akilaah.com
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                          <div class="main-stats d-flex justify-content-between mb-5">
+                            <div class="left-stat">
+                              <div class="text-caption-purple" style="color: #AB9EB8;">
+                                AKILAAH is a pioneering digital cooperative platform
+                                transforming how financial services and welfare support are
+                                accessed by everyone.
+                              </div>
+                            </div>
+                          </div>
+
+
+                    <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                        </div>
+                </div>
+
+
+
+                       <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2023</div>
+                     <img src="img/projects/konvey-app.png" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Web</span>
+                            <span class="badge" style="background-color: #172135; color: white;">User Interface</span>
+                            <span class="badge" style="background-color: #172135; color: white;">SaaS</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                            Konvey.app
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                            <div class="main-stats d-flex justify-content-between mb-5">
+                              <div class="left-stat">
+                                <div class="text-caption-purple" style="color: #AB9EB8;">
+                                  Konvey: A video recording software that replaces
+                                  back-and-forth emails and meetings with simple video messaging
+                                </div>
+                              </div>
+                            </div>
+
+                         <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                           
+                        </div>
+                </div>
+
+                </div>
+            </div>
+
+
+            
+        </div>
+
+
+        <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2024</div>
+                     <img src="img/projects/real-estate-app.png" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Web</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Mobile</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Fintech</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                            Boingestates.com
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                          <div class="main-stats d-flex justify-content-between mb-5">
+                              <div class="left-stat">
+                                <div class="text-caption-purple" style="color: #AB9EB8;">
+                                  A real estate development company that provides housing &
+                                  Real Estate investment solutions to individuals, groups &
+                                  corporate bodies
+                                </div>
+                              </div>
+                            </div>
+
+                         <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn  px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                            <a href="case-study1-akilah.html" class="btn" style="color: #B550F8;">
+                            View Case Study →
+                            </a>
+                        </div>
+                </div>
+
+
+
+                       <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2019</div>
+                     <img src="img/projects/work-io-app.png" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Web</span>
+                            <span class="badge" style="background-color: #172135; color: white;">User Interface</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Practice</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                            UI Challenges
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                            
+                         <div class="main-stats d-flex justify-content-between mb-5">
+                              <div class="left-stat">
+                                <div class="text-caption-purple" style="color: #AB9EB8;">
+                                  These challenges helped me think logically and improve my
+                                  problem-solving and design skills.
+                                </div>
+                              </div>
+                            </div>
+
+                           <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                            <a href="case-study1-akilah.html" class="btn" style="color: #B550F8;">
+                            View Case Study →
+                            </a>
+                        </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+
+          <div class="container-fluid mb-5">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2021</div>
+                     <img src="img/projects/mobicare-app.png" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">Mobile</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Medical</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Product Design</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                             MobiCare
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                          <div class="main-stats d-flex justify-content-between mb-5">
+                              <div class="left-stat">
+                                <div class="text-caption-purple" style="color: #AB9EB8;">
+                                 MobiCare allows patients to receive treatment and
+                                  consultations remotely, using technology such as video
+                                  conferencing, phone calls, and messaging.
+                                </div>
+                              </div>
+                            </div>
+
+                         <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class=" px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                            <a href="case-study1-akilah.html" class="btn" style="color: white;">
+                            View Case Study →
+                            </a>
+                        </div>
+                </div>
+
+
+
+                       <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="mb-3" style="color: #F7F3F399;">2024</div>
+                     <img src="img/projects/credence-app.png" alt="" class="img-fluid rounded mb-3" />
+
+
+                                        <!-- Tags -->
+                        <div class="mb-4 d-flex flex-wrap gap-2">
+                            <span class="badge" style="background-color: #172135; color: white;">User Interface</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Dashboard</span>
+                            <span class="badge" style="background-color: #172135; color: white;">Fintech</span>
+                        </div>
+                        
+                         <!-- Title -->
+                        <div class="mb-4">
+                            <h2 class="h4 fw-medium">
+                             Credence
+                            </h2>
+                        </div>
+
+                         <!-- Stats -->
+                            
+                         <div class="main-stats d-flex justify-content-between mb-5">
+                              <div class="left-stat">
+                                <div class="text-caption-purple" style="color: #AB9EB8;">
+                                 An intuitive, accessible, and visually appealing online
+                                  dashboard that empowers customers to manage their finances
+                                  efficiently.
+                                </div>
+                              </div>
+                            </div>
+
+                           <div class="d-flex flex-wrap gap-3">
+                            <a href="https://apps.apple.com/us/app/akilaah/id6670462885" class="btn  px-3 py-2" style="background-color: #B550F8; color: white;">
+                            Download App →
+                            </a>
+                            <a href="case-study1-akilah.html" class="btn" style="color: #B550F8;">
+                            View Case Study →
+                            </a>
+                        </div>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- portfolio ends here -->
+
+        <!-- skillset -->
+        <section class="py-5">
+  <div class="container-fluid">
+    <!-- Section Title -->
+    <h1 class="display-5 fw-medium mb-3" style="color: #B550F8;">
+      My Skillset
+    </h1>
+    <div class="mb-5" style="color: #F7F3F399;">
+      I always bring together the proper methods and tools to achieve the
+      best possible outcomes.
+    </div>
+
+    <!-- UI/UX Design Block -->
+    <div class="d-flex align-items-center mb-3">
+      <img src="img/Pen.png" alt="pen" class="me-2" />
+      <h2 class="h5 mt-1">UI & UX Design</h2>
+    </div>
+
+    <!-- Skills Buttons -->
+    <div class="d-flex flex-wrap mb-5 gap-2">
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">Design Thinking</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">Wireframing</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">User Research</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">Visual Design</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">Responsive Design</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">A/B Testing</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">Prototyping</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">Design System</button>
+      <button class="btn btn-sm rounded-pill" style="background-color: #172135; color: #F7F3F399;">Agile</button>
+    </div>
+
+    <!-- Tools Block -->
+    <div class="d-flex align-items-center mb-3">
+      <img src="img/Briefcase.png" alt="briefcase" class="me-2" />
+      <h2 class="h5 mt-1">Tools</h2>
+    </div>
+
+    <!-- Tools Grid -->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+      <div class="col d-flex">
+        <img src="img/devicon_figma.svg" alt="figma" class="me-3" />
+        <div>
+          <div class="fw-bold">Figma</div>
+          <div class="text-muted small">Interface Design Tool</div>
+        </div>
+      </div>
+      <div class="col d-flex">
+        <img src="img/circum_penpot.png" alt="penpot" class="me-3" />
+        <div>
+          <div class="fw-bold">Penpot</div>
+          <div class="text-muted small">Interface Design Tool</div>
+        </div>
+      </div>
+      <div class="col d-flex">
+        <img src="img/devicon_jira-wordmark.png" alt="jira" class="me-3" />
+        <div>
+          <div class="fw-bold">Jira</div>
+          <div class="text-muted small">Productivity Tool</div>
+        </div>
+      </div>
+      <div class="col d-flex">
+        <img src="img/devicon_trello.png" alt="trello" class="me-3" />
+        <div>
+          <div class="fw-bold">Trello</div>
+          <div class="text-muted small">Productivity Tool</div>
+        </div>
+      </div>
+      <div class="col d-flex">
+        <img src="img/devicon_slack.png" alt="slack" class="me-3" />
+        <div>
+          <div class="fw-bold">Slack</div>
+          <div class="text-muted small">Productivity Tool</div>
+        </div>
+      </div>
+      <div class="col d-flex">
+        <img src="img/logos_html-5.png" alt="html" class="me-3" />
+        <div>
+          <div class="fw-bold">HTML & CSS</div>
+          <div class="text-muted small">Interface Design Tool</div>
+        </div>
+      </div>
+    </div>
+  </div>
+        </section>
+
+        <!-- skillset ends here -->
+
+        <!-- contact -->
+        <section class="skillset contact-me">
+  <div class="container overflow-hidden py-5">
+    <div class="row align-items-center">
+      
+      <!-- Left side: Contact content -->
+      <div class="col-md-6">
+        <h1 class="fs-1 fw-semibold pb-4" style="letter-spacing: -1px; color: #B550F8;">
+          Let's work together
+        </h1>
+        <div class="mini-text font-epilogue text-caption-purple pb-4" style="color:  #AB9EB8;">
+          If you have a project or a job opportunity in mind, I would like
+          to hear from you.
+        </div>
+
+        <!-- Social/email links -->
+        <div class="email bg-dark rounded mb-3">
+          <div class="social-box d-flex py-2 px-3 align-items-center">
+            <div class="email-icon bg-subtle-grey rounded-full p-3">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+            <div class="email-text ms-2 pt-1">
+              <a href="mailto:Onyiksa@gmail.com" class="text-white text-decoration-none">Onyiksa@gmail.com</a>
+            </div>
+            <div class="email-arrow ms-2 pt-1 fs-5">&gt;</div>
           </div>
         </div>
-         </section>
-      </div>
-   </div>
-    <!-- END OF CONTACT ME SECTION -->
 
-    <script
+        <div class="email bg-dark rounded mb-3">
+          <div class="social-box d-flex py-2 px-3 align-items-center">
+            <div class="email-icon bg-subtle-grey rounded-circle p-3">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+            <div class="email-text ms-2 pt-1">
+              <a href="https://www.linkedin.com/in/audrey-onyike-ba6a50230/" class="text-white text-decoration-none">LinkedIn</a>
+            </div>
+            <div class="email-arrow ms-2 pt-1 fs-5">&gt;</div>
+          </div>
+        </div>
+
+        <div class="email bg-dark rounded mb-3">
+          <div class="social-box d-flex py-2 px-3 align-items-center">
+            <div class="email-icon bg-subtle-grey rounded-full p-3">
+              <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="email-text ms-2 pt-1">
+              <a href="https://twitter.com/Audreyonyike" class="text-white text-decoration-none">X/Twitter</a>
+            </div>
+            <div class="email-arrow ms-2 pt-1 fs-5">&gt;</div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="button-block mt-4">
+          <button class="btn text-white fw-bold rounded-pill px-4 py-2 me-3" style="background-color: #B550F8;">
+            Drop a message
+          </button>
+          <a href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?usp=sharing" 
+             class="btn p-0" style="color: #B550F8;">
+            View Resume
+          </a>
+        </div>
+      </div>
+
+      <!-- Right side: Image -->
+      <div class="col-md-6 text-center mt-4 mt-md-0">
+        <img title="audrey-contact" src="img/audrey-contact.svg" alt="audrey contact" class="img-fluid" />
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+     <script
       src="https://kit.fontawesome.com/3e3fa515ff.js"
-      crossorigin="anonymous"></script>
-    <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          let menu = document.getElementById("mobile-menu");
-          menu.classList.toggle("hidden");
-        });
-      // document
-      // .getElementById("menu-toggle")
-      // .addEventListener("click", function () {
-      //   document.getElementById("mobile-menu").classList.toggle("hidden");
-      //   });
-    </script>
-  </body>
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
 </html>
