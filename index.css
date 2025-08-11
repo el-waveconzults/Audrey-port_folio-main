@@ -1,6 +1,4 @@
-@import "tailwindcss";
-
-@theme{
+theme{
     --color-primary: #b550f8;
     --color-grey: #f7f3f3;
     --color-grayish: #e3e8ed;
@@ -15,13 +13,14 @@
     --color-subtle-grey: #302928;
     --breakpoint-xs: 20rem;
 }
-
 body{
     /* min-width: 48rem; */
     background-color: #141217;
     color: white;
 }
-
+.navv{
+    background-color: #141217!important;
+}
 .nav-links{
     font-family: Epilogue;
     font-size: 18px;
@@ -34,4 +33,7 @@ body{
 
 .epilogue{
     font-family: var(--font-epilogue);
+}
+.skillset{
+    background-color: #172135;
 }
