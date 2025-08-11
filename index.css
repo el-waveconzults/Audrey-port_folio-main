@@ -37,3 +37,15 @@ body{
 .skillset{
     background-color: #172135;
 }
+.offcanvas-half{
+    width: 50% !important;
+    max-width: none;
+}
+ @media (max-width: 991.98px) { /* Bootstrap lg breakpoint */
+    #collapsibleNavbar {
+      background-color:  #08070799; /* Bootstrap*/
+    }
+    #collapsibleNavbar .nav-link {
+      color: #fff !important; /* White text */
+    }
+  }
