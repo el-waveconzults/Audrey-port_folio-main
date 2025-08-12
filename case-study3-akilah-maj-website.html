@@ -2,438 +2,334 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-">
-    <link rel="stylesheet" href="output.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audrey Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
-    <title>Case Study3 MAJ WEBSITE</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,10000..900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"/>
+      <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+      rel="stylesheet"/>
 </head>
-<body class="font-epilogue">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20 xl:px-32">
-   <div class="container mx-auto pt-10">
-      <header class="">
-        <nav class="nav-links">
-          <div class="flex justify-between items-center">
-            <a
-              href="index.html"
-              class="text-white text-xl  text-center sm:text-left"
-              ><img
-                src="img/AudreyOnyike.svg"
-                alt="audrey-onyike"
-                class="mx-auto sm:mx-0"
-            /></a>
+<body>
+     <div class="container-fluid p-0 m-0 ">
+        <!-- nav -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #141217;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/AudreyOnyike.svg" alt="Audrey-logo" width="218px" height="37px" style="line-height: 100%; font-family: Monoton;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" style="box-shadow: none;" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-            <!-- Hamburger Button -->
-            <button
-              id="menu-toggle"
-              class="text-white md:hidden lg:hidden focus:outline-none"
-            >
-              ☰
-            </button>
-            <!-- Navigation Links (Hidden on small screens) -->
-            <ul id="menu" class="hidden md:flex space-x-6 text-white text-lg">
-              <li>
-                <a href="case-study1-akilah.html" class="hover:underline hover:text-primary"
-                  >Projects</a
-                >
-              </li>
-              <li>
-                <a
-                  href="about-me.html"
-                  class="hover:underline hover:text-primary"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a href="case-study1-akilah.html" class="hover:underline hover:text-primary"
-                  >My Resume</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <!-- Mobile Menu (Hidden by default) -->
-          <ul
-            id="mobile-menu"
-            class="hidden flex-col items-center text-white text-center spa sm:hidden"
-          >
-            <li><a href="#" class="hover:underline">Projects</a></li>
-            <li><a href="#" class="hover:underline">About</a></li>
-            <li><a href="#" class="hover:underline">My Resume</a></li>
-          </ul>
-        </nav>
-        <!-- END OF NAV LINKS -->
-      </header>
-      <!-- END OF HEADER -->
-
-      <section class="intro pt-16 pb-16">
-        <div class="logo-block pb-9">    
-            <img src="img/projects/maj-logo.png" alt="" />
-        </div>
-        <div class="h2-block pb-9">
-            <h2 class="xs:text-2xl md:text-5xl md:leading-16 xs:leading-8 text-5xl leading-16">
-                Redesigning to Enhance User Experience and Boost Engagement on Majfintech’s Website
-            </h2>
-        </div>
-        <div class="portfolio-image">
-            <img class="w-full h-auto" src="img/maj-banner.svg" alt="">
-        </div>
-      </section>
-      <!-- END OF INTRO SECTION -->
-
-      <section class="experience mb-28">
-        
-        <div class="overview">
-          <div class="flex mb-4">
-            <img class="w-[32px] h-[32px]" src="img/think-face.png" alt="think-face">
-            <h2 class="text-2xl font-bold ml-">OVERVIEW</h2>
-          </div>
-            
-            <div class="sub-text mb-12">
-              <p class="mb-8">
-                MAJ FinTech Limited is a financial and technology company that provides expertise in business management solutions and system integration for businesses in Africa. Their website is crucial for attracting new clients, potential business partners and showcasing their services.
-                However, the website faced significant challenges, which included:
-              </p>
-               
-              <ul class="list-disc pl-6">
-                    <li>Outdated design and user interface</li>
-                    <li>Poor User Experience</li>
-                    <li>Lack of content hierarchy</li>
-                    <li>Unorganized static content</li>
-                    <li>Not Mobile Friendly</li>
-              </ul>
+    <!-- Offcanvas menu -->
+    <div class="offcanvas offcanvas-end offcanvas-half" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #141217;">
+      <div class="offcanvas-header" style="border-bottom: 1px solid #AB9EB8;">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+          <img src="img/AudreyOnyike.svg" alt="Audrey-logo" width="150px" height="20px" style="font-family: Monoton;">
+        </h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="#portfolio">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="about-me.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="https://docs.google.com/document/d/1DXvf5DdWiG2wibxbNxAt-Pwki2gN1C0SJzE209bJEyE/edit?tab=t.0">My Resume</a>
+          </li>
+        </ul>
+      </div>
+    </div>
             </div>
-
-            <div class="my-role mb-14">
-              <div class="flex mb-4">
-                <img class="w-[32px] h-[32px]" src="img/security-hat.png" alt="think-face">
-                <h2 class="text-2xl font-bold ml-">MY ROLE</h2>
-              </div>
-
-              <p>
-                I conducted a full audit of the website, redesigned it to reflect a  fresh, modern look that enhanced the user experience and ensured alignment with Majfintech’s business objectives. To further expand their reach, I also designed a French version of the website for MajFintech’s Francophone  clients.
-              </p>
-            </div>
-
-
-            <div class="design-roadmap mb-8">
-              <div class="center-text flex justify-center">
-                <img class="w-[28px] h-[28px]" src="img/sparkling-star.png" alt="">
-                <h2 class="font-bold">DESIGN ROADMAP </h2>
-                <img class="w-[28px] h-[28px]" src="img/sparkling-star.png" alt="">
-              </div>
-            </div>
-
-            <div class="steps mb-14">
-              <div class="xs:flex-col gap-2.5 md:flex-row flex justify-between">
-                  <div class="mini-box md:w-1/4 mb-4 border border-white rounded-3xl px-3 py-5">
-                    <div class="font-bold text-subtle-purple mb-2">
-                      01
-                    </div>
-                    <div class="font-bold mb-11">DISCOVERY</div>
-                    <div class="list">
-                      <ul class="list-disc pl-6 font-epilogue ">
-                        <li>intensive website audit</li>
-                        <li>identifying challenges</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mini-box md:w-1/4 mb-4 border border-white rounded-3xl px-3 py-5">
-                    <div class="font-bold text-subtle-purple mb-2">
-                      02
-                    </div>
-                    <div class="font-bold mb-11">DEFINE</div>
-                    <div class="list">
-                      <ul class="list-disc pl-6 font-epilogue ">
-                        <li>User Personas</li>
-                        <li>Empathy Map</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mini-box md:w-1/4 mb-4 border border-white rounded-3xl px-3 py-5">
-                    <div class="font-bold text-subtle-purple mb-2">
-                      03
-                    </div>
-                    <div class="font-bold mb-11">IDEATION</div>
-                    <div class="list">
-                      <ul class="list-disc pl-6 font-epilogue ">
-                        <li>Wireframes & Prototypes</li>
-                        <li>Brainstorming</li>
-                        <li>Information Architecture</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="mini-box md:w-1/4 mb-4 border border-white rounded-3xl px-3 py-5">
-                    <div class="font-bold text-subtle-purple mb-2">
-                      04
-                    </div>
-                    <div class="font-bold mb-11">DESIGN</div>
-                    <div class="list">
-                      <ul class="list-disc pl-6 font-epilogue ">
-                        <li>Visual Design</li>
-                        <li>Color & Typography & Iconography</li>
-                      </ul>
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-        </div>
-
-        <div class="discovery mb-16">
-          <div class="font-bold mb-4">
-            DISCOVERY
-          </div>
-          <div class="flex mb-4">
-            <img class="w-[32px] h-[32px] mr-1" src="img/binoculars.png" alt="">
-            <div class="font-bold">WEBSITE AUDIT</div>
-          </div>
-          <div class="subarea mb-8">
-            To understand the gaps and opportunities for improvement, I conducted a thorough audit of Majfintech's existing website. This analysis uncovered several critical issues that impacted usability, brand perception, and overall performance:
-          </div>
-          <div class="sublist">
-            <ol class="list-decimal pl-6">
-              <li><strong class="font-bold">Lack of Consistent Visual Identity:</strong> The website's design did not reflect Majfintech's innovative brand, leading to a disjointed user experience.</li>
-              <li><strong class="font-bold">Cluttered Layout:</strong>Key information was buried under heavy text and poorly organized sections, making navigation confusing.</li>
-              <li><strong class="font-bold">Non-Responsive Design:</strong>The website was not fully optimized for mobile devices, limiting access for on-the-go users.</li>
-              <li><strong class="font-bold">Slow Load Times:</strong>
-              Images and resources were not optimized, resulting in delays that frustrated users.</li>
-              <li>
-                <strong class="font-bold">
-                  Outdated Aesthetics:
-                </strong> The design lacked modern visuals, making it appear less credible and professional.
-              </li>
-            </ol>
-          </div>
-        </div>
-
-        <div class="reserach mb-14">
-          <div class="font-bold mb-4">
-            USER RESEARCH
-          </div>
-
-          <div class="flex mb-4">
-            <img class="w-[32px] h-[32px] mr-1" src="img/binoculars.png" alt="">
-            <div class="font-bold ">ENGAGING STAKEHOLDERS AT MAJFINTECH</div>
-          </div>
-
-          <div class="mb-4">
-            To better understand Majfintech's objectives and align the redesign with their goals, I conducted discussions with key stakeholders. These conversations provided insights into their vision and business priorities.
-          </div>
-
-          <p class="mb-4">
-            Key Questions Asked
-          </p>
-
-          <div class="list">
-            <ol class="list-decimal pl-6">
-              <li>What are the primary goals of the website</li>
-              <li>What improvements would you like to see</li>
-              <li>How can the website better support business growth?</li>
-            </ol>
-          </div>
-
-        </div>
-
-        <div class="design-sections">
-
-          <div class="flex logo-header-block mb-8">
-                    <img class="w-[32px] h-[32px]"  src="img/jewel.png" alt="">
-                    <h2 class="text-2xl font-bold xs:mb-4">THE DESIGN</h2>
-          </div>
-
-          <div class="mini-design mb-14">
-              <div class="font-bold mb-4">
-                WIREFRAMES & SKETCHES
-              </div>
-              <p class="mb-14">
-                 I created wireframes and prototypes to address the website's issues.
-              </p>
-              <div class="screenshot">
-                <img class="w-full h-auto" src="img/wireframes.svg" alt="wireframe">
-              </div>
-          </div>
-
-          <div class="mini-design mb-14">
-              <div class="flex font-bold mb-4">
-                <img class="w-[32px] h-[32px]" src="img/sparkling-star.png" alt="star">
-                <div class="text-2xl">GENERAL OVERVIEW</div>
-              </div>
-              <p class="mb-14">
-                 In this redesign project, I transformed a visually overwhelming website into a user-friendly platform. My objectives were to enhance visibility, simplify navigation, and improve aesthetics while it aligns with brand goals. Also, to make the website more global and accessible, I created a French language version.
-Future improvements could include conducting user testing, analytics integration and user feedback (especially contact form usage).
-              </p>
-              <div class="screenshot">
-                <img class="w-full h-auto" src="img/maj-webkit.svg" alt="maj">
-              </div>
-          </div>
-
-          <div class="mini-design mb-14">
-              
-              <div class="text-2xl font-bold mb-4 it">HOMEPAGE</div>
-             
-              <p class="mb-14">
-                 The old homepage had an outdated design that was cluttered, making it hard for users to find information. The new homepage features a clean layout with a focus on key services, strong visuals, and clear CTAs to improve navigation.
-              </p>
-              <div class="flex justify-between gap-2.5 screenshot">
-                <div>
-                  <div class="mb-4 italic">
-                    OLD DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/old-homepage.svg" alt="maj">
-                </div>
-
-                <div>
-                  <div class="mb-4 italic">
-                    CURRENT DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/new-homepage.svg" alt="">
-                </div>
-                
-              </div>
-          </div>
-
-          <div class="mini-design mb-14">
-              
-              <div class="text-2xl font-bold mb-4">ABOUT</div>
-              <p class="mb-14">
-                The old homepage had an outdated design that was cluttered, making it hard for users to find information. The new homepage features a clean layout with a focus on key services, strong visuals, and clear CTAs to improve navigation.
-              </p>
-              <div class="flex justify-between screenshot">
-                <div>
-                  <div class="mb-4 italic">
-                    OLD DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/old-about-page.svg" alt="maj">
-                </div>
-
-                <div>
-                  <div class="mb-4 italic">
-                    CURRENT DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/new-about-page.svg" alt="">
-                </div>
-                
-              </div>
-          </div>
-
-          <div class="mini-design mb-14">
-              
-              <div class="text-2xl font-bold mb-4">SERVICES & SOLUTIONS</div>
-            
-              <p class="mb-14">
-                 The old homepage had an outdated design that was cluttered, making it hard for users to find information. The new homepage features a clean layout with a focus on key services, strong visuals, and clear CTAs to improve navigation.
-              </p>
-              <div class="flex justify-between gap-2.5 screenshot">
-                <div>
-                  <div class="mb-4 italic">
-                    OLD DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/old-services-page.svg" alt="maj">
-                </div>
-
-                <div>
-                  <div class="mb-4">
-                    CURRENT DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/new-services-page.svg" alt="">
-                </div>
-                
-              </div>
-          </div>
-
-          <div class="mini-design mb-14">
-              
-              <div class="text-2xl font-bold mb-4">CONTACT</div>
-             
-              <p class="mb-14">
-                 The old homepage had an outdated design that was cluttered, making it hard for users to find information. The new homepage features a clean layout with a focus on key services, strong visuals, and clear CTAs to improve navigation.
-              </p>
-              <div class="flex justify-between screenshot">
-                <div>
-                  <div class="mb-4 italic">
-                    OLD DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/old-contact-page.svg" alt="maj">
-                </div>
-
-                <div>
-                  <div class="mb-4 italic">
-                    CURRENT DESIGN
-                  </div>
-                  <img class="w-full h-auto" src="img/new-contact-page.svg" alt="">
-                </div>
-                
-              </div>
-          </div>
-        </div>
-
-        <div class="result-metrics">
-
-          <div class="results-learnings">      
-              <h2 class="text-2xl font-bold xs:mb-4">RESULTS AND METRICS</h2>
-              
-              <div class="insight  xs:flex-col md:flex-row flex justify-between mb-28">
-                <!-- 3 COLUMN LAYOUT -->
-                <div class="3-column-block w-1/3 px-2">
-                    <h2 class="text-6xl text-subtle-purple font-bold xs:mb-4 mb-2">25%</h2>
-                    <p class="w-4/5">increase in inquiries through the newly integrated contact forms and clear CTAs.</p>
-                </div>
-                <div class="3-column-block w-1/3 px-2">
-                    <h2 class="text-6xl text-subtle-purple font-bold xs:mb-4 mb-2">40%</h2>
-                    <p class="w-4/5">improvement in mobile traffic, driven by responsive design and faster load times.</p>
-                </div>
-                <div class="3-column-block w-1/3 px-2"> 
-                    <h2 class="text-6xl text-subtle-purple font-bold xs:mb-4 mb-2">20%</h2>
-                    <p class="w-4/5">
-                      reduction in bounce rates across key landing pages, with users spending more time exploring services.
-                    </p>
-                </div>
-                
-            </div>
-            </div>
-            
-
-            <div class="design-section">
-              <div class="flex justify-between mb-16">
-                <h2 class="text-2xl font-bold xs:mb-4">CONCLUSION</h2>
-                <div class="pointers w-2/3">
-                  The redesign of Majfintech's website demonstrated the importance of aligning user needs with business goals. Simplifying navigation and improving content hierarchy significantly enhanced user engagement, while mobile optimization expanded accessibility to a wider audience. Stakeholder feedback was critical in refining the design to reflect the company's brand identity, and the addition of clear calls-to-action proved essential for driving user interaction. The project also highlighted the value of addressing usability issues like broken links and missing pages, which improved credibility and functionality.
-                </div>
-
-              </div>
-
-
-              <div class="center-button text-center mt-5">
-                <a href="credence-ui.html" class="hover:cursor-default">
-                  <button class="border-2 border-white rounded-3xl px-14 py-2">View Next Project <span class="border-2 border-white rounded-4xl ml-1.5 px-1">&rarr;</span> </button></a>
-              </div>  
-
-            </div>
-
-        </div>
-      </section>
-      <!-- END OF MAIN PORTFOLIO SECTION -->
-
+            </nav>
 
     </div>
-    <!-- END OF MAIN CONTAINER SECTION -->
+        <!-- nav ends here -->
+    <section class="intro py-5">
+  <div class="container text-center">
 
-</div>
+    <!-- Logo Block -->
+    <div class="mb-4 text-start">
+      <img src="img/projects/maj-logo.png" alt="Majfintech Logo" class="img-fluid" style="max-height: 80px; margin-top: 5%;">
+    </div>
 
-    <script
+    <!-- Heading Block -->
+    <div class="mb-4">
+      <h2 class="h2 fw-bold display-5">
+        Redesigning to Enhance User Experience and Boost Engagement on Majfintech’s Website
+      </h2>
+    </div>
+
+    <!-- Portfolio Banner Image -->
+    <div>
+      <img src="img/maj-banner.svg" alt="Majfintech Banner" class="img-fluid w-100 h-auto">
+    </div>
+
+  </div>
+</section>
+
+    <section class="experience mb-5">
+  <div class="container">
+
+    <!-- OVERVIEW -->
+    <div class="mb-5">
+      <div class="d-flex align-items-center mb-3">
+        <img src="img/think-face.png" alt="think-face" width="32" height="32" class="me-2">
+        <h2 class="h4 fw-bold">OVERVIEW</h2>
+      </div>
+      <p class="mb-3">
+        MAJ FinTech Limited is a financial and technology company...
+      </p>
+      <ul class="list-disc ps-3">
+        <li>Outdated design and user interface</li>
+        <li>Poor User Experience</li>
+        <li>Lack of content hierarchy</li>
+        <li>Unorganized static content</li>
+        <li>Not Mobile Friendly</li>
+      </ul>
+    </div>
+
+    <!-- MY ROLE -->
+    <div class="mb-5">
+      <div class="d-flex align-items-center mb-3">
+        <img src="img/security-hat.png" alt="hat" width="32" height="32" class="me-2">
+        <h2 class="h4 fw-bold">MY ROLE</h2>
+      </div>
+      <p>
+        I conducted a full audit of the website, redesigned it to reflect a fresh, modern look...
+      </p>
+    </div>
+
+    <!-- DESIGN ROADMAP -->
+    <div class="mb-5 text-center">
+      <div class="d-flex justify-content-center align-items-center mb-4">
+        <img src="img/sparkling-star.png" alt="star" width="28" height="28" class="me-2">
+        <h2 class="fw-bold">DESIGN ROADMAP</h2>
+        <img src="img/sparkling-star.png" alt="star" width="28" height="28" class="ms-2">
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-3">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold text-primary mb-2">01</div>
+            <div class="fw-bold mb-3">DISCOVERY</div>
+            <ul class="ps-3 list-unstyled">
+              <li>Intensive website audit</li>
+              <li>Identifying challenges</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold text-primary mb-2">02</div>
+            <div class="fw-bold mb-3">DEFINE</div>
+            <ul class="ps-3 list-unstyled">
+              <li>User Personas</li>
+              <li>Empathy Map</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold text-primary mb-2">03</div>
+            <div class="fw-bold mb-3">IDEATION</div>
+            <ul class="ps-3 list-unstyled">
+              <li>Wireframes & Prototypes</li>
+              <li>Brainstorming</li>
+              <li>Information Architecture</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="border rounded-4 p-3 h-100">
+            <div class="fw-bold text-primary mb-2">04</div>
+            <div class="fw-bold mb-3">DESIGN</div>
+            <ul class="ps-3 list-unstyled">
+              <li>Visual Design</li>
+              <li>Color & Typography & Iconography</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DISCOVERY -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-3">DISCOVERY</h4>
+      <div class="d-flex align-items-center mb-2">
+        <img src="img/binoculars.png" width="32" height="32" class="me-2" alt="">
+        <div class="fw-bold">WEBSITE AUDIT</div>
+      </div>
+      <p class="mb-3">To understand the gaps and opportunities...</p>
+      <ol class="ps-3">
+        <li><strong>Lack of Consistent Visual Identity:</strong> The website’s design...</li>
+        <li><strong>Cluttered Layout:</strong> Key information was buried...</li>
+        <li><strong>Non-Responsive Design:</strong> Not optimized for mobile...</li>
+        <li><strong>Slow Load Times:</strong> Images not optimized...</li>
+        <li><strong>Outdated Aesthetics:</strong> The design lacked modern visuals...</li>
+      </ol>
+    </div>
+
+    <!-- USER RESEARCH -->
+    <div class="mb-5">
+      <h4 class="fw-bold mb-3">USER RESEARCH</h4>
+      <div class="d-flex align-items-center mb-2">
+        <img src="img/binoculars.png" width="32" height="32" class="me-2" alt="">
+        <div class="fw-bold">ENGAGING STAKEHOLDERS AT MAJFINTECH</div>
+      </div>
+      <p class="mb-3">To better understand Majfintech’s objectives...</p>
+      <p class="fw-bold">Key Questions Asked</p>
+      <ol class="ps-3">
+        <li>What are the primary goals of the website?</li>
+        <li>What improvements would you like to see?</li>
+        <li>How can the website better support business growth?</li>
+      </ol>
+    </div>
+
+    <!-- THE DESIGN -->
+    <div class="mb-5">
+      <div class="d-flex align-items-center mb-3">
+        <img src="img/jewel.png" width="32" height="32" class="me-2" alt="">
+        <h2 class="fw-bold h4">THE DESIGN</h2>
+      </div>
+
+      <!-- Wireframes -->
+      <div class="mb-5">
+        <h5 class="fw-bold mb-2">WIREFRAMES & SKETCHES</h5>
+        <p class="mb-4">I created wireframes and prototypes...</p>
+        <img src="img/wireframes.svg" class="img-fluid" alt="wireframe">
+      </div>
+
+      <!-- General Overview -->
+      <div class="mb-5">
+        <div class="d-flex align-items-center mb-3">
+          <img src="img/sparkling-star.png" width="32" height="32" class="me-2" alt="star">
+          <h5 class="fw-bold">GENERAL OVERVIEW</h5>
+        </div>
+        <p class="mb-4">In this redesign project, I transformed a visually overwhelming website into a user-friendly platform. My objectives were to enhance visibility, simplify navigation, and improve aesthetics while it aligns with brand goals. Also, to make the website more global and accessible, I created a French language version.
+                 Future improvements could include conducting user testing, analytics integration and user feedback (especially contact form usage).</p>
+        <img src="img/maj-webkit.svg" class="img-fluid" alt="maj">
+      </div>
+
+      <!-- HOMEPAGE COMPARISON -->
+      <div class="mb-5">
+        <h5 class="fw-bold mb-3">HOMEPAGE</h5>
+        <p>The old homepage had an outdated design that was cluttered, making it hard for users to find information. The new homepage features a clean layout with a focus on key services, strong visuals, and clear CTAs to improve navigation.</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">OLD DESIGN</div>
+            <img src="img/old-homepage.svg" class="img-fluid" alt="old homepage">
+          </div>
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">CURRENT DESIGN</div>
+            <img src="img/new-homepage.svg" class="img-fluid" alt="new homepage">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ABOUT COMPARISON -->
+      <div class="mb-5">
+        <h5 class="fw-bold mb-3">ABOUT PAGE</h5>
+        <p>The redesigned version organizes information into clear sections with supporting visuals, presenting Majfintech’s mission, vision, and achievements in a way that builds trust and credibility.</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">OLD DESIGN</div>
+            <img src="img/old-about-page.svg" class="img-fluid" alt="old about us">
+          </div>
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">CURRENT DESIGN</div>
+            <img src="img/new-about-page.svg" class="img-fluid" alt="new about us">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- SERVICES COMPARISON -->
+      <div class="mb-5">
+        <h5 class="fw-bold mb-3">SERVICES & SOLUTIONS</h5>
+        <p>The new services page resolves this with a structured layout, detailed descriptions, and engaging visuals, while adding clear CTAs to encourage exploration and inquiries. The solutions page did not exist on the old site, which made it hard for Majfintech to showcase its products. The new solutions page highlights offerings tailored to businesses and individuals</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">OLD DESIGN</div>
+            <img src="img/old-services-page.svg" class="img-fluid" alt="old services">
+          </div>
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">CURRENT DESIGN</div>
+            <img src="img/new-services-page.svg" class="img-fluid" alt="new services">
+          </div>
+        </div>
+      </div>
+
+
+      <!-- CONTACT COMPARISON -->
+      <div class="mb-5">
+        <h5 class="fw-bold mb-3">CONTACT</h5>
+        <p>The old contact page had a basic banner with limited options for users to connect with Majfintech. The new page includes an intuitive form, an interactive map for easy location access, and links to social media and other communication channels, making it more engaging and user-friendly.</p>
+        <div class="row g-3">
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">OLD DESIGN</div>
+            <img src="img/old-contact-page.svg" class="img-fluid" alt="old contact">
+          </div>
+          <div class="col-md-6">
+            <div class="fst-italic mb-2">CURRENT DESIGN</div>
+            <img src="img/new-contact-page.svg" class="img-fluid" alt="new contact">
+          </div>
+        </div>
+      </div>
+
+
+      
+      <!-- Repeat similar blocks for ABOUT, SERVICES, CONTACT -->
+
+    </div>
+
+    <!-- RESULTS & METRICS -->
+    <div class="mb-5">
+      <h2 class="h4 fw-bold">RESULTS AND METRICS</h2>
+      <div class="row text-center my-4">
+        <div class="col-md-4">
+          <h1 class="display-4 text-primary">25%</h1>
+          <p>Increase in inquiries via contact forms and CTAs.</p>
+        </div>
+        <div class="col-md-4">
+          <h1 class="display-4 text-primary">40%</h1>
+          <p>Improvement in mobile traffic.</p>
+        </div>
+        <div class="col-md-4">
+          <h1 class="display-4 text-primary">20%</h1>
+          <p>Reduction in bounce rates.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONCLUSION -->
+    <div class="mb-5">
+      <h2 class="h4 fw-bold">CONCLUSION</h2>
+      <p>
+        The redesign of Majfintech’s website demonstrated the importance...
+      </p>
+      <div class="text-center mt-4">
+        <a href="credence-ui.html" class="btn btn-outline-light rounded-pill px-4">View Next Project →</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+     <script
       src="https://kit.fontawesome.com/3e3fa515ff.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      document
-        .getElementById("menu-toggle")
-        .addEventListener("click", function () {
-          let menu = document.getElementById("mobile-menu");
-          menu.classList.toggle("hidden");
-        });
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
 
     </script>
 </body>
