@@ -49,3 +49,63 @@ body{
       color: #fff !important; /* White text */
     }
   }
+.image-stack-wrapper {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 0;
+    position: relative;
+  }
+
+  .phone {
+    width: 706.42px;
+    height: 593.16px;
+    opacity: 1;
+    top: 177px;
+    left: 670px;
+    max-width: 200px;
+    transition: transform 0.3s ease;
+  }
+
+  /* Tilt effect for V shape */
+  .phone-left {
+    width: 250px;
+    height: 550px;
+    top: 177px;
+    left: 670px;
+
+    transform: rotate(-12deg) translateY(15px);
+    margin-right: -70px;
+    z-index: 1;
+  }
+
+  .phone-center {
+    width: 250px;
+    height: 550px;
+    top: 199.46px;
+    left: 896.64px;
+
+    transform: rotate(0deg) translateY(0);
+    z-index: 3;
+  }
+
+  .phone-right {
+    width: 250px;
+    height: 550px;
+    top: 177px;
+    left: 994.64px;
+
+    transform: rotate(12deg) translateY(15px);
+    margin-left: -80px;
+    z-index: 2;
+  }
+
+  /* Responsive tweak */
+  @media (max-width: 768px) {
+    .phone {
+      width: 30%;
+      max-width: 140px;
+    }
+    .phone-left { margin-right: -35px; }
+    .phone-right { margin-left: -35px; }
+  }
